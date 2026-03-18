@@ -1,0 +1,183 @@
+================================================================================
+                    PROPUESTA DE DESARROLLO
+          SISTEMA DE ESTACIONAMIENTO AUTOMATIZADO MVP
+================================================================================
+
+DEMO EN VIVO: https://github.com/williamhenderson1014/parking-automatico
+
+--------------------------------------------------------------------------------
+RESUMEN EJECUTIVO
+--------------------------------------------------------------------------------
+
+Sistema de estacionamiento 100% automatizado con tecnología QR, integración
+MercadoPago y dispositivos IoT (ESP32). Operación sin personal para entrada,
+pago y salida de vehículos.
+
+--------------------------------------------------------------------------------
+ALCANCE DEL PROYECTO
+--------------------------------------------------------------------------------
+
+MÓDULO 1: SISTEMA DE ENTRADA
+- Generación automática de código QR al ingresar
+- Reconocimiento de patentes con cámara LPR
+- Asignación automática de espacio disponible
+- Barrera controlada por ESP32
+- Pantalla informativa con instrucciones
+
+MÓDULO 2: SISTEMA DE SALIDA
+- Escaneo de QR en totem de salida
+- Cálculo automático de tarifa por tiempo
+- Integración con MercadoPago (QR, tarjeta, efectivo)
+- Apertura automática de barrera post-pago
+- Generación de comprobante digital
+
+MÓDULO 3: PANEL DE CONTROL WEB
+- Dashboard en tiempo real
+- Mapa visual de espacios por piso/zona
+- Monitoreo de dispositivos IoT
+- Gestión de tarifas y horarios
+- Reportes y analytics
+- Alertas y notificaciones
+
+MÓDULO 4: HARDWARE IoT (ESP32)
+- Controladores de barreras entrada/salida
+- Lectores QR integrados
+- Pantallas informativas
+- Sensores de ocupación por espacio
+- Cámaras LPR para reconocimiento de patentes
+
+MÓDULO 5: INTEGRACIONES
+- MercadoPago (pagos QR, tarjetas, punto de venta)
+- Sistema de facturación electrónica AFIP
+- Notificaciones por email/SMS
+- API REST para integraciones futuras
+
+--------------------------------------------------------------------------------
+STACK TECNOLÓGICO
+--------------------------------------------------------------------------------
+
+BACKEND:
+- Node.js + Express / NestJS
+- PostgreSQL (base de datos)
+- Redis (cache y colas)
+- MQTT (comunicación IoT)
+
+FRONTEND:
+- Next.js 16 + TypeScript
+- Tailwind CSS
+- Diseño responsive
+
+MOBILE (opcional):
+- React Native / Flutter
+- App para usuarios frecuentes
+
+HARDWARE:
+- ESP32 para controladores
+- Raspberry Pi para procesamiento local
+- Cámaras IP con LPR
+
+INFRAESTRUCTURA:
+- AWS / DigitalOcean
+- Docker + Docker Compose
+- CI/CD automatizado
+
+--------------------------------------------------------------------------------
+FASES DE DESARROLLO
+--------------------------------------------------------------------------------
+
+FASE 1: NÚCLEO DEL SISTEMA (4 semanas)
+- Backend API REST completa
+- Base de datos y modelos
+- Panel de control básico
+- Integración MercadoPago sandbox
+
+FASE 2: HARDWARE IoT (2 semanas)
+- Firmware ESP32 para barreras
+- Comunicación MQTT
+- Lectores QR
+- Testing en ambiente controlado
+
+FASE 3: INTEGRACIÓN COMPLETA (2 semanas)
+- Conexión hardware-software
+- Cámaras LPR
+- Testing end-to-end
+- Ajustes y optimización
+
+--------------------------------------------------------------------------------
+INVERSIÓN
+--------------------------------------------------------------------------------
+
+OPCIÓN A: DESARROLLO COMPLETO MVP
+- Backend + Frontend + IoT básico
+- 8 semanas de desarrollo
+- Soporte 30 días post-lanzamiento
+- Documentación técnica completa
+
+Inversión: USD 18,000
+
+OPCIÓN B: DESARROLLO + HARDWARE INCLUIDO
+- Todo lo de Opción A
+- Kit hardware para 1 entrada + 1 salida
+- Instalación y configuración in-situ
+- Capacitación del equipo
+
+Inversión: USD 24,000
+
+OPCIÓN C: SISTEMA ESCALABLE ENTERPRISE
+- Arquitectura multi-sucursal
+- App móvil para usuarios
+- Dashboard analytics avanzado
+- SLA de soporte 24/7
+
+Inversión: USD 35,000
+
+--------------------------------------------------------------------------------
+CRONOGRAMA (8 SEMANAS)
+--------------------------------------------------------------------------------
+
+Semana 1-2:   Arquitectura, BD, API core
+Semana 3-4:   Panel web, dashboard, pagos
+Semana 5-6:   Firmware ESP32, comunicación IoT
+Semana 7:     Integración, testing
+Semana 8:     Deployment, documentación, capacitación
+
+--------------------------------------------------------------------------------
+ENTREGABLES
+--------------------------------------------------------------------------------
+
+✓ Código fuente completo (repositorio privado)
+✓ Documentación técnica y de usuario
+✓ Manual de instalación hardware
+✓ Firmware ESP32 con actualizaciones OTA
+✓ API documentada con Swagger
+✓ Videos tutoriales de uso
+✓ Soporte técnico 30 días
+
+--------------------------------------------------------------------------------
+GARANTÍAS
+--------------------------------------------------------------------------------
+
+- Código limpio y bien documentado
+- Testing automatizado (>80% coverage)
+- Arquitectura escalable
+- Actualizaciones de seguridad 6 meses
+- Transferencia completa de propiedad intelectual
+
+--------------------------------------------------------------------------------
+PRÓXIMOS PASOS
+--------------------------------------------------------------------------------
+
+1. Revisar demo funcional en el repositorio
+2. Definir alcance específico del MVP
+3. Especificar cantidad de entradas/salidas
+4. Acordar forma de pago (50% inicio, 50% entrega)
+5. Firmar contrato e iniciar desarrollo
+
+--------------------------------------------------------------------------------
+CONTACTO
+--------------------------------------------------------------------------------
+
+Disponible para videollamada de demostración técnica.
+Respuesta en menos de 24 horas.
+
+================================================================================
